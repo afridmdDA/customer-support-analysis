@@ -51,6 +51,7 @@ ax.set_title("Tickets by Category (n = 2,500)")
 ax.set_xlabel("Tickets")
 plt.tight_layout()
 plt.savefig(IMG / "tickets_by_category.png")
+plt.savefig(IMG / "tickets_by_category.svg")
 plt.close()
 
 fig, ax = plt.subplots(figsize=(8, 4.5))
@@ -60,6 +61,7 @@ ax.set_title("Tickets by Channel (n = 2,500)")
 ax.set_xlabel("Tickets")
 plt.tight_layout()
 plt.savefig(IMG / "tickets_by_channel.png")
+plt.savefig(IMG / "tickets_by_channel.svg")
 plt.close()
 
 # ------------------------------------------- 2. wait time vs CSAT
@@ -98,6 +100,7 @@ for i, v in enumerate(bucket["mean_csat"]):
     ax.text(i, v + 0.12, f"{v:.2f}", ha="center", fontsize=9)
 plt.tight_layout()
 plt.savefig(IMG / "wait_vs_csat.png")
+plt.savefig(IMG / "wait_vs_csat.svg")
 plt.close()
 
 # --------------------------------- 3. resolution time (closed only)
@@ -121,6 +124,7 @@ ax.set_title("Mean Resolution Time by Priority (Closed tickets)")
 ax.set_ylabel("Hours")
 plt.tight_layout()
 plt.savefig(IMG / "resolution_by_priority.png")
+plt.savefig(IMG / "resolution_by_priority.svg")
 plt.close()
 
 # ------------------------------------------- 4. backlog (open work)
@@ -142,6 +146,7 @@ ax.set_ylabel("Tickets")
 ax.set_xlabel("Priority")
 plt.tight_layout()
 plt.savefig(IMG / "status_by_priority.png")
+plt.savefig(IMG / "status_by_priority.svg")
 plt.close()
 
 # ------------------------------------------- 5. what does NOT matter

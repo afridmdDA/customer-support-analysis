@@ -61,7 +61,7 @@ This prints the full findings to the terminal and saves 5 charts to `images/`.
 - The effect is a cliff, not a slope: CSAT is flat (~4.3) up to 45 minutes
   and collapses past it. Mean wait overall is 25.6 min (median 17.4 min).
 
-![Mean CSAT by wait-time bucket](images/wait_vs_csat.png)
+![Mean CSAT by wait-time bucket](images/wait_vs_csat.svg)
 
 ### 2. Resolution speed does not move CSAT
 
@@ -110,9 +110,9 @@ customer-support-analysis/
 ├── data/
 │   └── customer_support_dataset.csv   # 2,500 tickets
 └── images/
-    ├── tickets_by_category.png
-    ├── tickets_by_channel.png
-    ├── wait_vs_csat.png
-    ├── resolution_by_priority.png
-    └── status_by_priority.png
+    ├── tickets_by_category.svg
+    ├── tickets_by_channel.svg
+    ├── wait_vs_csat.svg
+    ├── resolution_by_priority.svg
+    └── status_by_priority.svg
 ```
